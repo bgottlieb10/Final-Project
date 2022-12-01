@@ -26,6 +26,10 @@ h2 {
     z-index: 1;
 }
 
+body{
+    background: rgb(165, 165, 165);
+}
+
 .skip a:focus{
     position: absolute;
     top: 25px;
