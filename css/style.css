@@ -38,7 +38,7 @@ body{
 }
 
 .main_image{
-    max-width: 200px;
+    max-width: 100px;
 }
 
 .skip a:focus{
@@ -124,6 +124,26 @@ ul#main_menu .active{
       border: yellow solid 5px;
   }
 
+  .away img{
+      border: blue solid 5px;
+  }
+
+  .offense img{
+      border: red solid 5px;
+  }
+
+  .defense img{
+      border: blue solid 5px;
+  }
+
+  .neutral img{
+      border: white solid 5px;
+  }
+
+  .special_teams img{
+      border: green solid 5px;
+  }
+
   @media all and (min-width: 900px){
     .gallery {
       grid-template-columns: 33% 33% 33%;
@@ -138,7 +158,7 @@ ul#main_menu .active{
   
   @media all and (min-width: 1400px){
     .gallery {
-      grid-template-columns: 25% 25% 25% 25%;
+      grid-template-columns: 22% 22% 22% 22%;
       width: 100%;
     }
   }
