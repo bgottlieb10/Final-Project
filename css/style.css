@@ -49,18 +49,21 @@ body{
 
 ul#main_menu {
     list-style:none;
+    
 }
 ul#main_menu li {
-display:inline-block;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 ul#main_menu li a{
-display: inline-block;
-background-color: #fefefe;
-border: 1px solid;
-list-style: none;
-padding: 3px;
-border-radius: 10px;
-color:rgb(40,40,40);
+    display: flex;
+    background-color: #fefefe;
+    border: 1px solid;
+    list-style: none;
+    padding: 3px;
+    border-radius: 10px;
+    color:rgb(40,40,40);
     text-decoration:none;
 }
 ul#main_menu li a:hover {
@@ -84,67 +87,80 @@ ul#main_menu .active{
     border: 10px;
   }
 
-  .gallery img{
+.gallery img{
       width: 90%;
   }
 
-  .card{
+.card{
       border: black solid 10px;
   }
 
-  .card img{
+.card img{
       display: block;
       margin-left: auto;
       margin-right: auto;
   }
 
-  .card #offense img{
+.card #offense img{
       border: burlywood;
   }
   
-  .name>img {
+.name>img {
     align-self: center;
     width: auto;
     max-height: 200px;
   }
 
-  .flex {
+.flex {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    
   }
-  .flex img {
+.flex img {
     margin: 10px;
     width: 300px;
     height: 200px;
   }
 
-  .home img{
+ 
+
+.home img{
       border: yellow solid 5px;
   }
 
-  .away img{
+.away img{
       border: blue solid 5px;
   }
 
-  .offense img{
+.offense img{
       border: red solid 5px;
   }
 
-  .defense img{
+.defense img{
       border: blue solid 5px;
   }
 
-  .neutral img{
+.neutral img{
       border: white solid 5px;
   }
 
-  .special_teams img{
+.special_teams img{
       border: green solid 5px;
   }
 
-  @media all and (min-width: 900px){
+  .Espn_stats{
+      border-radius: 20px;
+      background: yellow;
+  }
+
+.Espn_stats:hover{
+      background: blue;
+      color: white;
+  }
+@media screen and (min-width: 600px){
     .gallery {
       grid-template-columns: 33% 33% 33%;
       width: 100%;
@@ -154,12 +170,28 @@ ul#main_menu .active{
       place-content: center;
      
     }
+
+    .flex{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    ul#main_menu{
+        display: flex;
+        flex-direction: row;
+    }
   }
-  
-  @media all and (min-width: 1400px){
+    
+@media screen and (min-width: 768px){
     .gallery {
       grid-template-columns: 22% 22% 22% 22%;
       width: 100%;
+    }
+
+    ul#main_menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
   }
 
