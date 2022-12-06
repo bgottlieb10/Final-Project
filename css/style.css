@@ -24,6 +24,7 @@ p{
 }
 .skip a{
     background-color: blue;
+    color: white;
     padding: 10px;
     position: absolute;
     top: -40px;
@@ -60,7 +61,7 @@ body{
 .skip a:focus{
     position: absolute;
     top: 25px;
-    color: yellow;
+    color: white;
 }
 
 ul#main_menu {
