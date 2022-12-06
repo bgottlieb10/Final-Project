@@ -164,13 +164,14 @@ ul#main_menu .active{
   }
 
 .special_teams img{
-      border: green solid 5px;
+      border: black solid 5px;
   }
 
 
 .Espn_stats{
       border-radius: 20px;
-      background: yellow;
+      background: lightgray;
+      font-family: fantasy;
   }
 
 .Espn_stats:hover{
@@ -200,7 +201,7 @@ ul#main_menu .active{
     font-size: 32px;
 }
 .content {
-    width: 100%;
+    width: 100;
     height: 100%;
     transition: transform .85s;
     transform-style: preserve-3d;
@@ -216,6 +217,12 @@ ul#main_menu .active{
     background: yellow;
     color: rgb(0, 0, 0);
     transform: rotateY( 180deg );
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .card:hover .content, .card:focus .content{
+        transition: none;
+    }
 }
 @media screen and (min-width: 600px){
     .gallery {
