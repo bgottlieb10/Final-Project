@@ -141,6 +141,8 @@ ul#main_menu .active{
     height: 200px;
   }
 
+
+
  
 
 .home img{
@@ -219,6 +221,8 @@ ul#main_menu .active{
     transform: rotateY( 180deg );
 }
 
+
+
 @media (prefers-reduced-motion: reduce) {
     .card:hover .content, .card:focus .content{
         transition: none;
@@ -252,7 +256,11 @@ ul#main_menu .active{
       grid-template-columns: 22% 22% 22% 22%;
       width: 100%;
     }
-
+    .flex{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
     ul#main_menu{
         display: flex;
         flex-direction: row;
